@@ -22,5 +22,28 @@
 .assembly-strip{margin-top:16px;padding:18px 20px;border:1px solid rgba(255,255,255,.08);border-radius:18px;background:rgba(255,255,255,.025)}
 .assembly-strip h3{margin-bottom:12px}.assembly-strip>div{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}.assembly-strip span{padding:11px 7px;text-align:center;border:1px solid rgba(255,255,255,.07);border-radius:11px;color:#a9bacc;font-size:10px;background:#0a111a}
 .flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr auto 1fr auto 1fr;gap:12px;align-items:center}.flow>div{padding:20px;border:1px solid rgba(255,255,255,.07);border-radius:15px;background:rgba(255,255,255,.025);text-align:center}.flow>div:first-letter{font-size:24px}.flow b,.flow span{display:block}.flow b{margin-top:6px}.flow span{font-size:10px;color:#8196aa}.flow i{color:#4de8ff;font-style:normal}
+
+/* Single-page app navigation: each section behaves like its own screen. */
+main>section{display:none!important;min-height:calc(100vh - 82px);padding-top:34px!important;padding-bottom:46px!important;animation:screenIn .28s ease both}
+main>section:first-child{display:block!important}
+body:has(#academy:target) main>section{display:none!important}
+body:has(#academy:target) main>#academy{display:block!important}
+body:has(#components:target) main>section{display:none!important}
+body:has(#components:target) main>#components{display:block!important}
+body:has(#builder:target) main>section{display:none!important}
+body:has(#builder:target) main>#builder{display:block!important}
+body:has(#how:target) main>section{display:none!important}
+body:has(#how:target) main>#how{display:block!important}
+body:has(#quiz:target) main>section{display:none!important}
+body:has(#quiz:target) main>#quiz{display:block!important}
+
+.topbar{position:sticky!important;top:0!important;z-index:100!important;backdrop-filter:blur(18px)}
+.topbar nav{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+.topbar nav a{padding:9px 12px;border-radius:10px;transition:.2s ease}
+.topbar nav a:hover{background:rgba(0,229,255,.09);color:#5ceaff}
+body:has(#academy:target) .topbar nav a[href="#academy"],body:has(#components:target) .topbar nav a[href="#components"],body:has(#builder:target) .topbar nav a[href="#builder"],body:has(#quiz:target) .topbar nav a[href="#quiz"]{background:rgba(0,229,255,.1);color:#5ceaff}
+
+@keyframes screenIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+
 @media(max-width:1200px){.builder-layout{grid-template-columns:260px minmax(420px,1fr)!important}.info-panel{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr 1fr}.ready-box{margin-top:0}.assembly-strip>div{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:850px){.builder-layout{grid-template-columns:1fr!important}.info-panel{grid-column:auto;display:flex}.scene-wrap,#threeScene{height:560px!important;min-height:560px!important}.assembly-strip>div{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr;}.flow i{transform:rotate(90deg)}}
+@media(max-width:850px){.builder-layout{grid-template-columns:1fr!important}.info-panel{grid-column:auto;display:flex}.scene-wrap,#threeScene{height:560px!important;min-height:560px!important}.assembly-strip>div{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr;}.flow i{transform:rotate(90deg)}main>section{min-height:auto;padding-top:22px!important}.topbar nav{display:grid;grid-template-columns:repeat(2,1fr);width:100%;order:3}.topbar{flex-wrap:wrap}}
