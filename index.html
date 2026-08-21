@@ -1,87 +1,24 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Cyber Computer — أكاديمية تفاعلية لفهم الكمبيوتر وتجميعه ثلاثي الأبعاد.">
-  <title>Cyber Computer | 3D PC Builder</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Cyber Computer — أكاديمية كمبيوتر تفاعلية مع مختبر تجميع ثلاثي الأبعاد واختبارات."><title>Cyber Computer | Computer Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#top"><span class="brand-mark">⚡</span><span><b>Cyber Computer</b><small>Learn • Build • Understand</small></span></a>
-    <nav><a href="#academy">الأكاديمية</a><a href="#components">المكونات</a><a href="#builder">3D Builder</a><a href="#quiz">الاختبارات</a></nav>
-    <div class="xp-pill">⭐ <b id="xp">0</b> XP</div>
-  </header>
-
-  <main id="top">
-    <section class="hero" id="academy">
-      <div>
-        <span class="eyebrow">COMPUTER ACADEMY</span>
-        <h1>ابنِ الكمبيوتر<br><span>بإيدك — ثلاثي الأبعاد</span></h1>
-        <p>مش مجرد معلومات. افهم القطع، شاهدها بشكل واقعي، لف المازربورد 360°، ثم ركّب CPU وRAM وSSD وكارت الشاشة ومكونات الطاقة في أماكنها الصحيحة.</p>
-        <div class="hero-buttons"><a class="btn primary" href="#builder">ابدأ التجميع 3D</a><a class="btn" href="#components">تعلم المكونات</a></div>
-        <div class="hero-stats"><div><b>3D</b><small>تجميع تفاعلي</small></div><div><b>50+</b><small>أسئلة وتحديات</small></div><div><b>360°</b><small>دوران وزوم</small></div></div>
-      </div>
-      <div class="hero-visual"><div class="hero-orb">🖥️</div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div></div>
-    </section>
-
-    <section class="section" id="components">
-      <div class="section-title"><div><span class="eyebrow">01 / HARDWARE</span><h2>مكونات الكمبيوتر</h2></div><p>المعلومة مكتوبة أمامك مباشرة. لا تحتاج لفتح كارت لمعرفة المفهوم.</p></div>
-      <div class="concept-grid">
-        <article><span>🧠</span><h3>CPU — المعالج</h3><p>ينفذ التعليمات ويعالج البيانات. الأنوية تنفذ العمل بالتوازي، والـCache ذاكرة صغيرة وسريعة تقلل زمن الوصول للبيانات المتكررة.</p></article>
-        <article><span>🧩</span><h3>RAM — الذاكرة</h3><p>مساحة عمل مؤقتة للبرامج والبيانات أثناء التشغيل. عند فصل الكهرباء تفقد محتواها، وزيادتها تساعد على تشغيل برامج أكثر في الوقت نفسه.</p></article>
-        <article><span>🎮</span><h3>GPU — كارت الشاشة</h3><p>يعالج الرسوميات والمهام المتوازية. في الجهاز المتقدم يمكن استخدام بطاقة مثل RTX 5090، لكن يجب مراعاة الطاقة والحجم والتوافق.</p></article>
-        <article><span>🧱</span><h3>Motherboard — المازربورد</h3><p>اللوحة التي تربط CPU وRAM وGPU والتخزين والطاقة. تحتوي على Socket وDIMM وPCIe وM.2 وموصلات الطاقة.</p></article>
-        <article><span>💾</span><h3>NVMe SSD — التخزين</h3><p>وحدة تخزين سريعة تتصل غالبًا عبر M.2 وPCIe. تحفظ النظام والبرامج والملفات حتى بعد إيقاف الجهاز.</p></article>
-        <article><span>🔌</span><h3>PSU — مزود الطاقة</h3><p>يحوّل الكهرباء ويوزعها على المكونات. من أهم التوصيلات 24-Pin للوحة وEPS للمعالج وكابل طاقة GPU للبطاقة.</p></article>
-        <article><span>❄️</span><h3>Cooling — التبريد</h3><p>المعالج وكارت الشاشة ينتجان حرارة. المشتت والمراوح أو التبريد المائي ينقلان الحرارة بعيدًا عن المكونات.</p></article>
-        <article><span>🖥️</span><h3>Case — الكيس</h3><p>يحمي القطع وينظم الهواء والكابلات. يجب اختيار حجم يدعم اللوحة وكارت الشاشة ومبرد المعالج ومزود الطاقة.</p></article>
-      </div>
-    </section>
-
-    <section class="section builder-section" id="builder">
-      <div class="section-title"><div><span class="eyebrow">02 / 3D BUILD LAB</span><h2>مختبر تجميع الكمبيوتر — 3D</h2></div><p>اسحب بالماوس لتدوير المازربورد، استخدم عجلة الماوس للـZoom، ثم اختر القطعة واضغط «تركيب» أو اسحبها للمكان الصحيح.</p></div>
-      <div class="builder-layout">
-        <div class="scene-wrap">
-          <div id="threeScene" aria-label="مختبر تجميع كمبيوتر ثلاثي الأبعاد"></div>
-          <div class="scene-help"><span>🖱️ سحب = دوران</span><span>🔍 عجلة = Zoom</span><span>↔️ زر يمين = تحريك</span></div>
-          <div class="scene-status" id="sceneStatus">جاهز للتجميع — المازربورد أمامك.</div>
-        </div>
-        <aside class="builder-panel">
-          <div class="build-progress"><div><b id="buildCount">0</b>/7 قطع</div><div class="progress-track"><i id="progressBar"></i></div></div>
-          <h3>اختار قطعة</h3>
-          <div class="part-list">
-            <button class="part-choice" data-part="cpu"><strong>🧠 CPU</strong><small>AMD Ryzen 9 9950X3D</small></button>
-            <button class="part-choice" data-part="ram"><strong>🧩 RAM</strong><small>DDR5 64GB — 2×32GB</small></button>
-            <button class="part-choice" data-part="gpu"><strong>🎮 GPU</strong><small>NVIDIA GeForce RTX 5090</small></button>
-            <button class="part-choice" data-part="ssd"><strong>💾 NVMe SSD</strong><small>PCIe 5.0 M.2</small></button>
-            <button class="part-choice" data-part="cooler"><strong>❄️ CPU Cooler</strong><small>High-end tower cooler</small></button>
-            <button class="part-choice" data-part="psu"><strong>🔌 PSU</strong><small>1200W ATX 3.x</small></button>
-            <button class="part-choice" data-part="power"><strong>⚡ Power Cables</strong><small>24-Pin + EPS + GPU</small></button>
-          </div>
-          <div class="selected-box" id="selectedBox">اختار قطعة من القائمة لبدء تركيبها.</div>
-          <button class="btn primary full" id="installBtn" disabled>🔧 تركيب القطعة</button>
-          <button class="btn full" id="resetBuild">↻ إعادة التجميع</button>
-        </aside>
-      </div>
-      <div class="part-explainer" id="partExplainer"><h3>💡 كيف يتم التركيب؟</h3><p>اختار قطعة وستظهر هنا خطوات تركيبها، ثم نفّذها داخل المختبر ثلاثي الأبعاد.</p></div>
-    </section>
-
-    <section class="section assembly-steps">
-      <div class="section-title"><div><span class="eyebrow">03 / REAL BUILD ORDER</span><h2>ترتيب التجميع الحقيقي</h2></div><p>المحاكاة تتبع منطق التجميع الفعلي، وليس مجرد وضع صور فوق بعضها.</p></div>
-      <div class="steps"><div><b>01</b><h3>CPU</h3><p>افتح Socket، حاذِ العلامة، وضع المعالج بدون ضغط جانبي.</p></div><div><b>02</b><h3>RAM</h3><p>حاذِ الـnotch مع الشق، ثم اضغط حتى تغلق المشابك.</p></div><div><b>03</b><h3>M.2 SSD</h3><p>أدخل الوحدة بزاوية ثم اخفضها وثبتها بالبرغي أو الآلية المخصصة.</p></div><div><b>04</b><h3>Cooler</h3><p>استخدم كمية مناسبة من المعجون الحراري وثبت المشتت بالتساوي.</p></div><div><b>05</b><h3>GPU</h3><p>افتح PCIe x16، أدخل البطاقة بشكل مستقيم وثبتها في الكيس.</p></div><div><b>06</b><h3>PSU</h3><p>ثبت مزود الطاقة ثم وصل 24-Pin وEPS وكابل GPU بالطريقة الصحيحة.</p></div></div>
-    </section>
-
-    <section class="section quiz" id="quiz">
-      <div class="section-title"><div><span class="eyebrow">04 / KNOWLEDGE CHECK</span><h2>اختبارات وتحديات</h2></div><p>كل مرحلة تعليمية تنتهي بأسئلة، والنقاط تفتح مراحل جديدة.</p></div>
-      <div class="quiz-card"><div class="quiz-top"><span id="qNumber">سؤال 1 من 50</span><b id="quizXP">0 XP</b></div><h3 id="question">ما وظيفة RAM الأساسية؟</h3><div class="answers" id="answers"><button data-answer="0">تخزين الملفات بشكل دائم</button><button data-answer="1">توفير مساحة عمل مؤقتة للبرامج</button><button data-answer="2">توفير الكهرباء للمكونات</button><button data-answer="3">إخراج الصورة للشاشة</button></div><div id="feedback" aria-live="polite"></div><button class="btn primary next" id="nextQuestion" disabled>السؤال التالي →</button></div>
-    </section>
-  </main>
-  <footer>Cyber Computer © 2026 — Learn • Build • Understand</footer>
-  <script type="module" src="script.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#top"><span class="brand-mark">⚡</span><span><b>Cyber Computer</b><small>Learn • Build • Understand</small></span></a><nav><a href="#academy">الأكاديمية</a><a href="#components">المكونات</a><a href="#builder">3D Builder</a><a href="#quiz">الاختبارات</a></nav><div class="xp-pill">⭐ <b id="xp">0</b> XP</div></header>
+<main id="top">
+<section class="hero" id="academy"><div><span class="eyebrow">COMPUTER ACADEMY</span><h1>افهم الكمبيوتر<br><span>من الصفر إلى التجميع</span></h1><p>تعلم مكونات الكمبيوتر ومفاهيمه، ثم ادخل مختبرًا ثلاثي الأبعاد لتتعلم تركيب CPU وRAM وNVMe وGPU والتبريد والطاقة خطوة بخطوة.</p><div class="hero-buttons"><a class="btn primary" href="#builder">ابدأ مختبر 3D</a><a class="btn" href="#components">ابدأ التعلم</a></div><div class="hero-stats"><div><b>3D</b><small>مختبر تجميع</small></div><div><b>50</b><small>سؤال تعليمي</small></div><div><b>360°</b><small>دوران وزوم</small></div></div></div><div class="hero-visual"><div class="hero-orb">🖥️</div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div></div></section>
+<section class="section" id="components"><div class="section-title"><div><span class="eyebrow">01 / HARDWARE</span><h2>مفاهيم الكمبيوتر</h2></div><p>المعلومة مكتوبة تحت كل مفهوم مباشرة، بدون الحاجة إلى فتح كارت.</p></div><div class="concept-grid">
+<article><span>💻</span><h3>Computer — الكمبيوتر</h3><p>جهاز إلكتروني يستقبل البيانات ويعالجها وفق تعليمات ثم ينتج معلومات يمكن عرضها أو تخزينها.</p></article><article><span>🧱</span><h3>Hardware — العتاد</h3><p>كل الأجزاء المادية التي يمكن لمسها، مثل المعالج والرام واللوحة الأم وكارت الشاشة والتخزين.</p></article><article><span>🧠</span><h3>CPU — المعالج</h3><p>ينفذ التعليمات ويجري العمليات الحسابية والمنطقية. الأنوية تسمح بتنفيذ مهام متعددة، والـCache تقلل زمن الوصول للبيانات.</p></article><article><span>🧩</span><h3>RAM — الذاكرة</h3><p>ذاكرة سريعة ومؤقتة تستخدمها البرامج أثناء العمل. محتواها يختفي عند إيقاف الطاقة.</p></article><article><span>🎮</span><h3>GPU — كارت الشاشة</h3><p>يعالج الرسوميات والعمليات المتوازية. بطاقات قوية مثل RTX 5090 تحتاج توافقًا جيدًا مع الطاقة والحجم والتبريد.</p></article><article><span>🧱</span><h3>Motherboard — المازربورد</h3><p>اللوحة التي تربط المكونات. تحتوي على CPU Socket وDIMM وPCIe وM.2 وموصلات الطاقة.</p></article><article><span>💾</span><h3>NVMe SSD</h3><p>وحدة تخزين سريعة تتصل غالبًا عبر M.2 وPCIe وتحفظ النظام والبرامج والملفات بشكل دائم.</p></article><article><span>🔌</span><h3>PSU — الباور سبلاي</h3><p>يوفر جهود الطاقة المناسبة للمكونات. من التوصيلات المهمة 24-Pin وEPS وطاقة GPU.</p></article><article><span>❄️</span><h3>Cooling — التبريد</h3><p>ينقل الحرارة بعيدًا عن المعالج والمكونات باستخدام مشتتات ومراوح أو تبريد مائي.</p></article><article><span>⚙️</span><h3>BIOS / UEFI</h3><p>برنامج منخفض المستوى يبدأ قبل نظام التشغيل ويهيئ العتاد ويبدأ عملية الإقلاع.</p></article><article><span>🔎</span><h3>POST</h3><p>فحص ذاتي عند التشغيل للتأكد من أن المكونات الأساسية قادرة على بدء النظام.</p></article><article><span>🔗</span><h3>PCIe</h3><p>واجهة اتصال عالية السرعة تستخدمها بطاقات الرسوميات وبعض وحدات التخزين وبطاقات التوسعة.</p></article>
+</div></section>
+<section class="section builder-section" id="builder"><div class="section-title"><div><span class="eyebrow">02 / 3D BUILD LAB</span><h2>مختبر تجميع الكمبيوتر — 3D</h2></div><p>المشهد في المنتصف: اسحب بالماوس للدوران، عجلة للـZoom، واسحب القطعة نفسها إلى مكانها الصحيح.</p></div>
+<div class="builder-layout">
+<aside class="builder-panel left-panel"><div class="build-progress"><div><b id="buildCount">0</b>/7 قطع مركبة</div><strong id="buildPercent">0%</strong></div><div class="progress-track"><i id="progressBar"></i></div><h3>اختر قطعة</h3><div class="part-list"><button class="part-choice" data-part="cpu"><strong>🧠 CPU</strong><small>AMD Ryzen 9 9950X3D</small></button><button class="part-choice" data-part="ram"><strong>🧩 RAM</strong><small>DDR5 64GB — 2×32GB 6000MHz</small></button><button class="part-choice" data-part="gpu"><strong>🎮 GPU</strong><small>NVIDIA GeForce RTX 5090</small></button><button class="part-choice" data-part="ssd"><strong>💾 NVMe SSD</strong><small>PCIe 5.0 M.2 2TB</small></button><button class="part-choice" data-part="cooler"><strong>❄️ CPU Cooler</strong><small>High-end tower cooler</small></button><button class="part-choice" data-part="psu"><strong>🔌 PSU</strong><small>1200W ATX 3.x</small></button><button class="part-choice" data-part="power"><strong>⚡ Power Cables</strong><small>24-Pin + EPS + GPU</small></button></div><div class="selected-box" id="selectedBox">اختر قطعة من القائمة أو اضغط عليها لتظهر في المشهد.</div><button class="btn primary full" id="installBtn" disabled>🔧 تركيب القطعة</button><button class="btn full" id="resetBuild">↻ إعادة التجميع</button><div class="xp-build">⭐ XP: <b id="buildXP">0</b></div></aside>
+<div class="scene-wrap"><div class="scene-toolbar"><button id="rotateBtn">↻ تدوير</button><button id="homeBtn">⌂ إعادة النظر</button><button id="wireBtn">◉ تفاصيل اللوحة</button></div><div id="threeScene" aria-label="مختبر تجميع كمبيوتر ثلاثي الأبعاد"></div><div class="scene-help"><span>🖱️ سحب = دوران</span><span>🔍 عجلة = Zoom</span><span>🖐️ اسحب القطعة = تحريك</span></div><div class="scene-status" id="sceneStatus">جاري تجهيز المازربورد ثلاثية الأبعاد...</div></div>
+<aside class="info-panel"><div class="guide"><h3>دليل التجميع</h3><ol><li>ضع المعالج CPU في الـSocket</li><li>ركّب المشتت الحراري</li><li>ركّب الرامات RAM في DIMM</li><li>ركّب NVMe SSD في M.2</li><li>ركّب كارت الشاشة في PCIe x16</li><li>ثبت PSU ووصل كابلات الطاقة</li><li>افحص التوصيلات ثم شغّل الجهاز</li></ol></div><div class="selected-info"><span>معلومات القطعة</span><h3 id="infoTitle">Motherboard</h3><p id="infoText">لوحة أم واقعية المظهر تحتوي على Socket وDIMM وPCIe وM.2 وموصلات الطاقة. اختر أي قطعة لرؤية تعليمات تركيبها.</p></div><div class="ready-box" id="readyBox">🟢 جاهز للتجميع<br><small>ابدأ باختيار قطعة من القائمة.</small></div></aside></div>
+<div class="part-explainer" id="partExplainer"><h3>💡 طريقة التركيب</h3><p>اختر قطعة لترى مكانها الصحيح والخطوات المطلوبة.</p></div><div class="assembly-strip"><h3>خطوات التجميع</h3><div><span>1 🧠 CPU</span><span>2 🧩 RAM</span><span>3 ❄️ Cooler</span><span>4 💾 SSD</span><span>5 🎮 GPU</span><span>6 🔌 PSU + Cables</span><span>7 ⚡ تشغيل</span></div></div></section>
+<section class="section" id="how"><div class="section-title"><div><span class="eyebrow">03 / HOW IT WORKS</span><h2>كيف يعمل الكمبيوتر؟</h2></div><p>من الكهرباء إلى نظام التشغيل.</p></div><div class="flow"><div>⚡<b>Power</b><span>الطاقة تصل للمكونات</span></div><i>→</i><div>🧠<b>CPU</b><span>تنفيذ التعليمات</span></div><i>→</i><div>🧩<b>RAM</b><span>بيانات العمل</span></div><i>→</i><div>🔎<b>POST / BIOS</b><span>فحص وتهيئة</span></div><i>→</i><div>🪟<b>OS</b><span>بدء النظام</span></div></div></section>
+<section class="section quiz" id="quiz"><div class="section-title"><div><span class="eyebrow">04 / 50 QUESTIONS</span><h2>اختبر فهمك</h2></div><p>50 سؤالًا متدرجًا. كل إجابة صحيحة تمنحك XP وتشرح لك لماذا.</p></div><div class="quiz-card"><div class="quiz-top"><span id="qNumber">سؤال 1 من 50</span><b id="quizXP">0 XP</b></div><h3 id="question">جاري تحميل السؤال...</h3><div class="answers" id="answers"></div><div id="feedback" aria-live="polite"></div><button class="btn primary next" id="nextQuestion" disabled>السؤال التالي →</button></div></section>
+</main><footer>Cyber Computer © 2026 — Learn • Build • Understand</footer>
+<script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script><script src="script.js"></script>
+</body></html>
