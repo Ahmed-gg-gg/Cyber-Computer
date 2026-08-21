@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Cyber Computer - منصة تفاعلية لفهم الكمبيوتر ومكوناته وتجميعه." />
-  <title>Cyber Computer | اكتشف جهازك</title>
+  <meta name="description" content="Cyber Computer - أكاديمية تفاعلية لتعلم الكمبيوتر ومكوناته وتجميعه." />
+  <title>Cyber Computer | أكاديمية الكمبيوتر</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,77 +15,59 @@
   <header class="topbar">
     <div class="brand"><div class="brand-mark">⚡</div><div><strong>Cyber Computer</strong><span>Learn • Build • Understand</span></div></div>
     <nav>
-      <a href="#home">الرئيسية</a>
-      <a href="#components">المكونات</a>
-      <a href="#build">ركّب جهازك</a>
-      <a href="#how">كيف يعمل؟</a>
+      <a href="#home">الرئيسية</a><a href="#lessons">الدروس</a><a href="#components">المكونات</a><a href="#build">ركّب جهازك</a><a href="#quiz">الاختبار</a>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero">
       <div class="hero-copy">
-        <div class="eyebrow">🖥️ Computer Summer Camp</div>
-        <h1>اكتشف الكمبيوتر<br><span>من الداخل للخارج</span></h1>
-        <p>تعلم وظيفة كل قطعة، شاهد كيف تعمل معًا، ثم جرّب تركيب جهاز كامل على لوحة أم تفاعلية.</p>
-        <div class="hero-actions"><a class="btn primary" href="#components">ابدأ التعلم</a><a class="btn ghost" href="#build">جرّب التجميع</a></div>
-        <div class="hero-stats"><div><b>10+</b><span>مكونات أساسية</span></div><div><b>3D-style</b><span>تفاعل بصري</span></div><div><b>100%</b><span>تعلم عملي</span></div></div>
+        <div class="eyebrow">🖥️ COMPUTER ACADEMY</div>
+        <h1>افهم الكمبيوتر<br><span>من الصفر إلى التجميع</span></h1>
+        <p>تعلم كيف يعمل الكمبيوتر، افهم كل قطعة، استمع للشرح بصوتك المفضل، ثم طبّق ما تعلمته في تجميع جهاز تفاعلي.</p>
+        <div class="hero-actions"><a class="btn primary" href="#lessons">ابدأ التعلم</a><a class="btn ghost" href="#build">جرّب التجميع</a></div>
+        <div class="hero-stats"><div><b>8+</b><span>مكونات رئيسية</span></div><div><b>4</b><span>مراحل تعلم</span></div><div><b>XP</b><span>نقاط وتقدم</span></div></div>
       </div>
-      <div class="pc-scene" aria-label="Interactive PC preview">
-        <div class="case"><div class="glass"><div class="gpu-glow"></div><div class="fan fan1"></div><div class="fan fan2"></div><div class="board"><div class="cpu-block"></div><div class="ram-slot r1"></div><div class="ram-slot r2"></div><div class="gpu-block"></div></div></div><div class="case-bottom"></div></div>
+      <div class="pc-scene" aria-label="PC preview"><div class="case"><div class="glass"><div class="gpu-glow"></div><div class="fan fan1"></div><div class="fan fan2"></div><div class="board"><div class="cpu-block"></div><div class="ram-slot r1"></div><div class="ram-slot r2"></div><div class="gpu-block"></div></div></div><div class="case-bottom"></div></div></div>
+    </section>
+
+    <section id="lessons" class="section">
+      <div class="section-head"><div><span class="eyebrow">01 / LEARNING PATH</span><h2>رحلة التعلم</h2></div><p>كل مرحلة تشرح المفهوم أولًا، ثم تطلب منك تطبيقه والإجابة عن أسئلة عليه.</p></div>
+      <div class="lesson-grid">
+        <article class="lesson active"><span class="lesson-num">01</span><div><h3>أساسيات الكمبيوتر</h3><p>ما هو الكمبيوتر؟ Hardware وSoftware وكيف تتحول البيانات إلى معلومات.</p><button class="btn small lesson-open" data-lesson="basics">ابدأ الدرس 🔊</button></div></article>
+        <article class="lesson"><span class="lesson-num">02</span><div><h3>مكونات الكمبيوتر</h3><p>CPU وRAM وGPU وMotherboard والتخزين والطاقة والتبريد.</p><button class="btn small lesson-open" data-lesson="componentsLesson">افتح الدرس 🔊</button></div></article>
+        <article class="lesson"><span class="lesson-num">03</span><div><h3>كيف تعمل القطع معًا؟</h3><p>رحلة البيانات من التخزين إلى RAM ثم CPU وGPU والشاشة.</p><button class="btn small lesson-open" data-lesson="howLesson">افتح الدرس 🔊</button></div></article>
+        <article class="lesson"><span class="lesson-num">04</span><div><h3>تجميع الكمبيوتر</h3><p>تعلم ترتيب تركيب CPU وRAM وSSD وGPU والـPSU والكابلات.</p><button class="btn small lesson-open" data-lesson="buildLesson">افتح الدرس 🔊</button></div></article>
       </div>
     </section>
 
     <section id="components" class="section">
-      <div class="section-head"><div><span class="eyebrow">01 / COMPONENTS</span><h2>اعرف كل قطعة</h2></div><p>اضغط على أي مكوّن لتعرف وظيفته ومكانه وطريقة تركيبه.</p></div>
+      <div class="section-head"><div><span class="eyebrow">02 / COMPONENTS</span><h2>موسوعة المكونات</h2></div><p>اضغط على أي قطعة لقراءة شرحها، ثم استخدم 🔊 لسماع النص.</p></div>
       <div class="component-grid">
-        <article class="component" data-name="CPU" data-title="المعالج CPU" data-text="العقل الذي ينفذ التعليمات ويعالج البيانات."><div class="icon cpu">🧠</div><h3>CPU</h3><span>المعالج</span></article>
-        <article class="component" data-name="RAM" data-title="الرام RAM" data-text="ذاكرة سريعة مؤقتة تستخدمها البرامج أثناء التشغيل."><div class="icon ram">🧩</div><h3>RAM</h3><span>الذاكرة</span></article>
-        <article class="component" data-name="GPU" data-title="كارت الشاشة GPU" data-text="يعالج الرسوميات والصور والفيديو ويخفف الحمل عن المعالج في مهام الرسوم."><div class="icon gpu">🎮</div><h3>GPU</h3><span>كارت الشاشة</span></article>
-        <article class="component" data-name="Motherboard" data-title="اللوحة الأم Motherboard" data-text="اللوحة التي تربط المكونات معًا وتوفر منافذ الاتصال والطاقة."><div class="icon board">🧱</div><h3>Motherboard</h3><span>اللوحة الأم</span></article>
-        <article class="component" data-name="Storage" data-title="التخزين SSD / HDD" data-text="المكان الذي تحفظ فيه نظام التشغيل والملفات والبرامج بشكل دائم."><div class="icon storage">💾</div><h3>Storage</h3><span>SSD / HDD</span></article>
-        <article class="component" data-name="PSU" data-title="مزود الطاقة PSU" data-text="يوزع الطاقة الكهربائية المناسبة على مكونات الجهاز."><div class="icon psu">🔌</div><h3>PSU</h3><span>مزود الطاقة</span></article>
-        <article class="component" data-name="Cooler" data-title="نظام التبريد" data-text="يحافظ على درجات حرارة المعالج والمكونات ضمن الحدود الآمنة."><div class="icon cooler">❄️</div><h3>Cooler</h3><span>التبريد</span></article>
-        <article class="component" data-name="Case" data-title="صندوق الكمبيوتر Case" data-text="الهيكل الذي يحمل المكونات وينظم تدفق الهواء ويحمي القطع."><div class="icon caseicon">🖥️</div><h3>Case</h3><span>الكيس</span></article>
+        <article class="component" data-name="CPU" data-title="المعالج CPU" data-text="المعالج هو الجزء الذي ينفذ التعليمات ويجري العمليات الحسابية والمنطقية. كلما كان المعالج مناسبًا للمهمة، استطاع الكمبيوتر تنفيذ أعمال أكثر في وقت أقل."><div class="icon cpu">🧠</div><h3>CPU</h3><span>المعالج</span></article>
+        <article class="component" data-name="RAM" data-title="الرام RAM" data-text="ذاكرة الوصول العشوائي هي مساحة سريعة ومؤقتة تحتفظ بالبيانات والبرامج التي يعمل عليها الكمبيوتر الآن. عند إيقاف تشغيل الجهاز، تفقد RAM محتواها."><div class="icon ram">🧩</div><h3>RAM</h3><span>الذاكرة</span></article>
+        <article class="component" data-name="GPU" data-title="كارت الشاشة GPU" data-text="وحدة معالجة الرسوميات مسؤولة عن معالجة الصور والرسوميات والفيديو. تستخدم في الألعاب والتصميم والذكاء الاصطناعي وغيرها من المهام المتوازية."><div class="icon gpu">🎮</div><h3>GPU</h3><span>كارت الشاشة</span></article>
+        <article class="component" data-name="Motherboard" data-title="اللوحة الأم Motherboard" data-text="اللوحة الأم هي المنصة التي تتصل بها معظم مكونات الكمبيوتر. تحتوي على مقبس المعالج وشقوق RAM وPCIe ومنافذ التخزين وموصلات الطاقة."><div class="icon board">🧱</div><h3>Motherboard</h3><span>اللوحة الأم</span></article>
+        <article class="component" data-name="Storage" data-title="التخزين SSD / HDD" data-text="وحدة التخزين تحفظ نظام التشغيل والبرامج والملفات بشكل دائم. SSD أسرع عادة من HDD لأنه لا يعتمد على أقراص ميكانيكية دوارة."><div class="icon storage">💾</div><h3>Storage</h3><span>SSD / HDD</span></article>
+        <article class="component" data-name="PSU" data-title="مزود الطاقة PSU" data-text="مزود الطاقة يحول الكهرباء القادمة من المقبس إلى جهود مناسبة لمكونات الكمبيوتر ويوزعها عبر الكابلات الصحيحة."><div class="icon psu">🔌</div><h3>PSU</h3><span>مزود الطاقة</span></article>
+        <article class="component" data-name="Cooler" data-title="نظام التبريد" data-text="التبريد يزيل الحرارة الناتجة عن المعالج وباقي المكونات. قد يستخدم مشتتًا ومروحة أو نظام تبريد مائي حسب التصميم."><div class="icon cooler">❄️</div><h3>Cooler</h3><span>التبريد</span></article>
+        <article class="component" data-name="Case" data-title="صندوق الكمبيوتر Case" data-text="الكيس يحمي المكونات ويوفر أماكن لتركيبها ويساعد في تنظيم تدفق الهواء والكابلات داخل الجهاز."><div class="icon caseicon">🖥️</div><h3>Case</h3><span>الكيس</span></article>
       </div>
     </section>
 
     <section id="build" class="section build-section">
-      <div class="section-head"><div><span class="eyebrow">02 / BUILD LAB</span><h2>ركّب جهازك بنفسك</h2></div><p>ابدأ باللوحة الأم، ثم اسحب المكونات إلى أماكنها الصحيحة.</p></div>
-      <div class="build-layout">
-        <div class="motherboard" id="motherboard">
-          <div class="mb-label">ATX MOTHERBOARD</div>
-          <div class="socket zone" data-slot="cpu"><span>CPU SOCKET</span></div>
-          <div class="dims zone" data-slot="ram"><span>DIMM</span><span>DIMM</span><span>DIMM</span><span>DIMM</span></div>
-          <div class="pcie zone" data-slot="gpu"><span>PCIe x16</span></div>
-          <div class="m2 zone" data-slot="storage"><span>M.2</span></div>
-          <div class="power24 zone" data-slot="power"><span>24-PIN</span></div>
-        </div>
-        <aside class="parts-panel">
-          <h3>قطع الجهاز</h3>
-          <p>اسحب القطعة إلى مكانها المناسب.</p>
-          <div id="parts" class="parts-list">
-            <div class="part" draggable="true" data-part="cpu">🧠 <b>CPU</b><small>المعالج</small></div>
-            <div class="part" draggable="true" data-part="ram">🧩 <b>RAM</b><small>الذاكرة</small></div>
-            <div class="part" draggable="true" data-part="gpu">🎮 <b>GPU</b><small>كارت الشاشة</small></div>
-            <div class="part" draggable="true" data-part="storage">💾 <b>SSD</b><small>التخزين</small></div>
-            <div class="part" draggable="true" data-part="power">🔌 <b>24-PIN</b><small>طاقة اللوحة</small></div>
-          </div>
-          <div class="build-status" id="buildStatus">ابدأ بتركيب المعالج ثم أكمل باقي القطع.</div>
-          <button class="btn primary full" id="powerBtn">⚡ شغّل الجهاز</button>
-        </aside>
-      </div>
+      <div class="section-head"><div><span class="eyebrow">03 / BUILD LAB</span><h2>ركّب جهازك بنفسك</h2></div><p>تعلم أماكن القطع ثم اسحبها إلى مكانها الصحيح.</p></div>
+      <div class="build-layout"><div class="motherboard" id="motherboard"><div class="mb-label">ATX MOTHERBOARD</div><div class="socket zone" data-slot="cpu"><span>CPU SOCKET</span></div><div class="dims zone" data-slot="ram"><span>DIMM</span><span>DIMM</span><span>DIMM</span><span>DIMM</span></div><div class="pcie zone" data-slot="gpu"><span>PCIe x16</span></div><div class="m2 zone" data-slot="storage"><span>M.2</span></div><div class="power24 zone" data-slot="power"><span>24-PIN</span></div></div><aside class="parts-panel"><h3>قطع الجهاز</h3><p>اسحب القطعة إلى مكانها المناسب.</p><div id="parts" class="parts-list"><div class="part" draggable="true" data-part="cpu">🧠 <b>CPU</b><small>المعالج</small></div><div class="part" draggable="true" data-part="ram">🧩 <b>RAM</b><small>الذاكرة</small></div><div class="part" draggable="true" data-part="gpu">🎮 <b>GPU</b><small>كارت الشاشة</small></div><div class="part" draggable="true" data-part="storage">💾 <b>SSD</b><small>التخزين</small></div><div class="part" draggable="true" data-part="power">🔌 <b>24-PIN</b><small>طاقة اللوحة</small></div></div><div class="build-status" id="buildStatus">ابدأ بتركيب المعالج ثم أكمل باقي القطع.</div><button class="btn primary full" id="powerBtn">⚡ شغّل الجهاز</button></aside></div>
     </section>
 
-    <section id="how" class="section flow-section">
-      <div class="section-head"><div><span class="eyebrow">03 / HOW IT WORKS</span><h2>ماذا يحدث عندما تشغّل الكمبيوتر؟</h2></div><p>رحلة مبسطة من زر التشغيل إلى ظهور نظام التشغيل.</p></div>
-      <div class="flow"><div>⚡<b>Power</b><span>الطاقة تصل للمكونات</span></div><i>→</i><div>🧠<b>CPU</b><span>يبدأ تنفيذ التعليمات</span></div><i>→</i><div>🧩<b>RAM</b><span>تحمل البيانات المؤقتة</span></div><i>→</i><div>🔎<b>POST / BIOS</b><span>فحص المكونات</span></div><i>→</i><div>🪟<b>OS</b><span>يبدأ النظام</span></div></div>
-    </section>
+    <section id="quiz" class="section quiz-section"><div class="section-head"><div><span class="eyebrow">04 / QUIZ</span><h2>اختبر نفسك</h2></div><p>بعد كل درس، اختبر فهمك واحصل على XP. سنوسع بنك الأسئلة ليغطي المنهج كاملًا.</p></div><div class="quiz-card"><div class="quiz-meta"><span>سؤال تجريبي</span><strong id="score">0 XP</strong></div><h3 id="quizQuestion">أي مكوّن يحتفظ بالبيانات مؤقتًا أثناء تشغيل البرامج؟</h3><div class="answers"><button class="answer" data-correct="true">RAM</button><button class="answer">SSD</button><button class="answer">PSU</button><button class="answer">Case</button></div><div id="quizFeedback" aria-live="polite"></div></div></section>
 
+    <section id="how" class="section flow-section"><div class="section-head"><div><span class="eyebrow">05 / HOW IT WORKS</span><h2>ماذا يحدث عندما تشغّل الكمبيوتر؟</h2></div><p>رحلة مبسطة من زر التشغيل إلى ظهور نظام التشغيل.</p></div><div class="flow"><div>⚡<b>Power</b><span>الطاقة تصل للمكونات</span></div><i>→</i><div>🧠<b>CPU</b><span>يبدأ تنفيذ التعليمات</span></div><i>→</i><div>🧩<b>RAM</b><span>تحمل البيانات المؤقتة</span></div><i>→</i><div>🔎<b>POST / BIOS</b><span>فحص المكونات</span></div><i>→</i><div>🪟<b>OS</b><span>يبدأ النظام</span></div></div></section>
     <section class="section challenge"><div><span class="eyebrow">FINAL LAB</span><h2>تحدي تجميع الكمبيوتر</h2><p>تعلّم القطع أولًا، ثم حاول تركيب جهاز كامل بدون أخطاء.</p></div><a class="btn primary" href="#build">ابدأ التحدي</a></section>
   </main>
 
-  <div class="modal" id="modal"><div class="modal-card"><button id="closeModal" class="close">×</button><div id="modalIcon" class="modal-icon">🧠</div><h2 id="modalTitle"></h2><p id="modalText"></p><div class="tip">💡 <b>نصيحة:</b> افهم وظيفة القطعة ومكانها قبل تركيبها.</div></div></div>
+  <div class="modal" id="modal"><div class="modal-card"><button id="closeModal" class="close">×</button><div id="modalIcon" class="modal-icon">🧠</div><h2 id="modalTitle"></h2><div class="read-controls"><button id="speakBtn" class="btn primary small">🔊 اقرأ الشرح</button><button id="pauseBtn" class="btn ghost small">⏸️ إيقاف مؤقت</button><button id="stopBtn" class="btn ghost small">⏹️ إيقاف</button><label>السرعة <select id="rate"><option value="0.8">0.8×</option><option value="1" selected>1×</option><option value="1.25">1.25×</option><option value="1.5">1.5×</option></select></label></div><p id="modalText"></p><div class="tip">💡 اسمع الشرح ثم ارجع للمكونات وجرّب تركيبها بنفسك.</div></div></div>
+  <div class="lesson-modal" id="lessonModal"><div class="modal-card"><button id="closeLesson" class="close">×</button><span class="eyebrow">LESSON</span><h2 id="lessonTitle"></h2><p id="lessonBody"></p><div class="read-controls"><button id="lessonSpeak" class="btn primary small">🔊 اقرأ الدرس</button><button id="lessonStop" class="btn ghost small">⏹️ إيقاف</button></div></div></div>
   <footer>Cyber Computer © 2026 — Learn • Build • Understand</footer>
   <script src="script.js"></script>
 </body>
